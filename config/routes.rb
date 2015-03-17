@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  get 'welcome/pricing'
+
+  get 'welcome/login'
+
+  get 'welcome/account'
+
   resources :work_orders
 
   devise_for :users
