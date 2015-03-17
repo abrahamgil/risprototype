@@ -1,0 +1,37 @@
+<%= form_for(@work_order) do |f| %>
+  <% if @work_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@work_order.errors.count, "error") %> prohibited this work_order from being saved:</h2>
+
+      <ul>
+      <% @work_order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :startTime %><br>
+    <%= f.datetime_select :startTime %>
+  </div>
+  <div class="field">
+    <%= f.label :endTime %><br>
+    <%= f.datetime_select :endTime %>
+  </div>
+  <div class="field">
+    <%= f.label :customerId %><br>
+    <%= f.text_field :customerId %>
+  </div>
+  <div class="field">
+    <%= f.label :languageTo %><br>
+    <%= f.text_field :languageTo %>
+  </div>
+  <div class="field">
+    <%= f.label :languageFrom %><br>
+    <%= f.text_field :languageFrom %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

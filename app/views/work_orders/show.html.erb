@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @work_order.startTime %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @work_order.endTime %>
+</p>
+
+<p>
+  <strong>Customerid:</strong>
+  <%= @work_order.customerId %>
+</p>
+
+<p>
+  <strong>Languageto:</strong>
+  <%= @work_order.languageTo %>
+</p>
+
+<p>
+  <strong>Languagefrom:</strong>
+  <%= @work_order.languageFrom %>
+</p>
+
+<%= link_to 'Edit', edit_work_order_path(@work_order) %> |
+<%= link_to 'Back', work_orders_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startTime: 2015-03-17 18:30:25
+  endTime: 2015-03-17 18:30:25
+  customerId: 
+  languageTo: MyString
+  languageFrom: MyString
+
+two:
+  startTime: 2015-03-17 18:30:25
+  endTime: 2015-03-17 18:30:25
+  customerId: 
+  languageTo: MyString
+  languageFrom: MyString
